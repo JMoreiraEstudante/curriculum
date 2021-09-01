@@ -1,2 +1,2 @@
 # curriculum
-Página pessoal de currículo
+Página pessoal para registrar portfólio de projetos
