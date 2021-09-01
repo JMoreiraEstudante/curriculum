@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Homepage{% endblock %}
+{% block css %}<link rel="stylesheet" href="{% static 'css/homepage.css' %}">{% endblock css %}
+
+{% block content %}
+    <div class="projetos">
+    {% for projeto in projetos %}
+        <div class="projeto">
+            
+            {% for foto in fotos %}
+                {% if projeto.get_id == foto.projeto.get_id%}
+                    <div class="imagem">
+                    <a href="{{ projeto.get_absolute_url }}">
+                        <img class="center" src="{{foto.image.url}}" alt="erro">
+                    </a></div>
+                {% endif %}
+            {% endfor %}
+            <div class="footer-projeto">
+            <h3>{{projeto.titulo}}</h3>
+            <p>{{projeto.criaCardDescricao}}</p>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}
+
