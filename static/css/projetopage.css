@@ -1,0 +1,35 @@
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    a, p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    a, p {
+        font-size: 0.85rem;
+    }
+}
+
+.paragrafo {
+    text-indent: 25px; 
+}
+
+.contemVideo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ecddf8!important;
+    border-radius: 100px;
+}
