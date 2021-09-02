@@ -30,7 +30,7 @@ class Projeto(models.Model):
         return self.descricao[0:80]+"..."
 
     def criaCodigoFonte(self):
-        return "<p class='paragrafo'>Acesso o codigo fonte em: <a href="+self.linkGit+">"+self.linkGit+"</a></p>"
+        return "<p class='paragrafo'>Acesse o codigo fonte em: <a href="+self.linkGit+">"+self.linkGit+"</a></p>"
     
     def criaLinkAcesso(self):
         if self.linkAcesso is not None:

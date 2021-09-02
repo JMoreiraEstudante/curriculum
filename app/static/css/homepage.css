@@ -42,14 +42,24 @@
 .projeto {
     border: .5px;
     border-radius: 5px;
-    padding: 10px;
+    border-color: #cde7dc;
     border-style: outset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.footer-projeto p {
+    padding: 0 10px;
 }
 
 .imagem img{
     position: relative;
     width: 312px;
-    height: 225px;
+    height: auto;
+    max-height: 252px;
     overflow: hidden;
 }
 
