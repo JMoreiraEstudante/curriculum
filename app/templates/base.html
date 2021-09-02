@@ -7,6 +7,7 @@
     {% block css %}{% endblock css %}
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   </head>
   <body>
     <div class="nav-bg">
@@ -36,7 +37,7 @@
           </div>
           <div class="form-group">
           {{ form.corpo.errors }}
-          {{ form.corpo }}  
+          {{ form.corpo }}
           </div>
           <button type="submit" class="btn btn-dark">Envie</button>
         </form>
@@ -69,7 +70,7 @@
       </footer>
     </div>
     </div>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
