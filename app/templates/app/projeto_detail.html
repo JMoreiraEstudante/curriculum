@@ -5,7 +5,9 @@
 {% block content %}
   <h1>{{projeto.titulo}}</h1>
   {{projeto.criaParagrafo|safe}}
-  {{projeto.criaLinkAcesso|safe}}
+  {% if projeto.criaLinkAcesso != None%}
+    {{projeto.criaLinkAcesso|safe}}
+  {%endif%}
   {{projeto.criaCodigoFonte|safe}}
   <div class="fotos">
   {% if fotos.count > 0 %}
